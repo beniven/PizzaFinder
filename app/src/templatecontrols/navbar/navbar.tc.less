@@ -1,0 +1,27 @@
+& {
+    #platui > #media;
+    #platui > #mixins;
+    #platui > #variables;
+
+    [plat-control="navbar"] {
+        height: @navbar-height;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		z-index: 100;
+        background-color: lighten(@neutral-color, 15%);
+
+		.navbar-logo-container {
+			height: 100%;
+            width: 100%;
+            text-align: center;
+
+			.navbar-logo {
+				height: @navbar-height - 0.5em;
+                padding: 0.5em 0 0 1em;
+			}
+		}
+    }
+}

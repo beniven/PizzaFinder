@@ -1,5 +1,7 @@
-<plat-foreach plat-context="pizzerias">
-    <div class="pizzeria" plat-context="properties">
-        <h4 plat-tap="toSingle(@index)">{{pizzeria}}</h4>
+<plat-foreach class="pizzerias row" plat-context="pizzerias">
+    <div class="col-dsk-4" plat-context="properties">
+        <div class="pizzeria" plat-tap="toSingle(@index)">
+            <span>{{pizzeria}}</span>
+        </div>
     </div>
 </plat-foreach>

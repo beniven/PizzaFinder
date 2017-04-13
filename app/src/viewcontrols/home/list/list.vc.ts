@@ -18,6 +18,7 @@ export default class ListViewControl extends BaseViewControl {
         this.repo.getAll()
             .then((results) => {
                 this.context.pizzerias = results;
+                console.log(results);
             });
     }
 

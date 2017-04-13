@@ -1,0 +1,46 @@
+// Global Default Styles
+& {
+	#platui > #mixins;
+    #platui > #media;
+	#platui > #variables;
+
+    *:not(img):not(.plat-animated-child) {
+        .translateZ(0);
+    }
+
+    html, body {
+        .box-sizing(border-box);
+    }
+
+    h1, h2, h3, h4, h5, h6, p, blockquote {
+        font-family: @font-serif;
+    }
+
+    *, *::before, *::after {
+        .box-sizing(inherit);
+    }
+
+    .plat-viewcontrol {
+        height: 100%;
+    }
+
+    .scroll-y {
+        .scroll(y);
+    }
+
+    .full-page {
+        .fill();
+        position: relative;
+        padding-top: @navbar-height;
+        background-color: @white;
+    }
+
+    .body {
+        .fill();
+
+        & > [plat-control="plat-viewport"] {
+            height: auto;
+            min-height: 100%;
+        }
+    }
+}

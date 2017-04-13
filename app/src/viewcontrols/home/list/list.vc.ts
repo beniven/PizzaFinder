@@ -1,5 +1,6 @@
 import {register} from 'platypus';
 import BaseViewControl from '../../base/base.vc';
+import SingleViewControl from '../single/single.vc';
 import PizzeriasRepository from '../../../repositories/pizzerias/pizzerias.repo';
 
 export default class ListViewControl extends BaseViewControl {
@@ -13,16 +14,19 @@ export default class ListViewControl extends BaseViewControl {
         super();
     }
 
-    loaded() {
+    initialize() {
         this.repo.getAll()
             .then((results) => {
                 this.context.pizzerias = results;
-                console.log(results);
             });
     }
 
     toSingle(index: number) {
-        console.log(index);
+        this.navigator.navigate(SingleViewControl, {
+            parameters: {
+                id: index
+            }
+        });
     }
 }
 

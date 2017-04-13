@@ -41,7 +41,7 @@ export default class BaseService {
         if (this.utils.isEmpty(path)) {
             return '';
         } else {
-            return path;
+            return '/' + path;
         }
     }
 

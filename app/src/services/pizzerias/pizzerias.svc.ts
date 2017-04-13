@@ -9,6 +9,10 @@ export default class PizzeriasService extends BaseService {
     getAll() {
         return this.get();
     }
+
+    read(id: number) {
+        return this.get(id.toString());
+    }
 }
 
 register.injectable('pizzerias-svc', PizzeriasService);

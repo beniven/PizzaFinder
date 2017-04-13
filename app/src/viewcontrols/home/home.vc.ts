@@ -13,7 +13,7 @@ export default class HomeViewControl extends BaseViewControl {
 
         router.configure([
             { pattern: '', view: ListViewControl },
-            { pattern: ':id', view: SingleViewContol }
+            { pattern: 'pizzeria/:id', view: SingleViewContol }
         ])
     }
 }

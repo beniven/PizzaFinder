@@ -11,6 +11,10 @@ export default class PizzeriasRepository extends BaseRepository {
         return this.svc.getAll();
     }
 
+    read(id: number) {
+        return this.svc.read(id);
+    }
+
     test() {
         return this.svc.test();
     }

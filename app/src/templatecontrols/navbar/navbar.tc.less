@@ -12,6 +12,7 @@
 		width: 100%;
 		z-index: 100;
         background-color: lighten(@neutral-color, 15%);
+		border-bottom: 1px solid lighten(@neutral-color, 8%);
 
 		.navbar-logo-container {
 			height: 100%;
@@ -19,8 +20,21 @@
             text-align: center;
 
 			.navbar-logo {
-				height: @navbar-height - 0.5em;
-                padding: 0.5em 0 0 1em;
+				display: inline-block;
+				line-height: @navbar-height;
+				height: @navbar-height;
+
+				span {
+					color: @dark-blue;
+					display: inline-block;
+					font-family: @font-header;
+					font-size: 1.5em;
+				}
+
+				img {
+					height: @navbar-height - 2em;
+					vertical-align: middle;
+				}
 			}
 		}
     }

@@ -27,7 +27,7 @@ export default class SingleViewControl extends BaseViewControl {
         let id = this.id = params.id,
             context = this.context,
             utils = this.utils,
-            favorites = this.favorites = JSON.parse(localStorage.getItem('favorites'));
+            favorites = this.favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
         if (this.checkFavorites()) {
             context.favorite = true;
@@ -38,7 +38,6 @@ export default class SingleViewControl extends BaseViewControl {
         this.repo.read(id)
             .then((pizzeria) => {
                 context.pizzeria = pizzeria;
-                console.log(pizzeria);
             })
             .then(() => {
                 let coordinates = (<any>context.pizzeria).geometry.coordinates;
@@ -66,6 +65,10 @@ export default class SingleViewControl extends BaseViewControl {
     }
 
     checkFavorites(): boolean {
+        if (this.utils.isNull(this.favorites)) {
+            return;
+        }
+
         for (var i = 0; i < this.favorites.length; i++) {
             if (this.favorites[i] === this.id ) { 
                 return true;

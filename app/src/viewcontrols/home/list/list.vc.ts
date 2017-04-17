@@ -30,13 +30,15 @@ export default class ListViewControl extends BaseViewControl {
                     }
                 }, pizzerias);
 
-                console.log(pizzerias);
-
                 this.context.pizzerias = pizzerias;
             });
     }
 
     checkFavorites(id: any): boolean {
+        if (this.utils.isNull(this.favorites)) {
+            return;
+        }
+
         for (var i = 0; i < this.favorites.length; i++) {
             if (this.favorites[i] === String(id) ) { 
                 return true;

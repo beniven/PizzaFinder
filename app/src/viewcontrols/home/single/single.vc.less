@@ -10,32 +10,57 @@
                 min-height: 15em;
             }
 
-            .title {
-                color: @red;
-                text-align: center;
+            .details {
+                .title {
+                    color: @red;
+                    text-align: center;
 
-                .favorite {
-                    width: 0.55em;
-                    height: 0.55em;
-                    vertical-align: 10px;
+                    .favorite {
+                        width: 0.55em;
+                        height: 0.55em;
+                        vertical-align: 10px;
+
+                        &:hover {
+                            cursor: pointer;
+                            opacity: 0.65;
+                        }
+                    }
+                }
+
+                p {
+                    text-align: center;
+                }
+
+                a {
+                    color: @red;
+                    font-weight: bold;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                .back {
+                    color: @red;
+                    font-family: @font-header;
+                    font-size: 1.25em;
+                    margin-top: 4.5em;
+                    opacity: 0.6;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                    .transition-all();
 
                     &:hover {
                         cursor: pointer;
-                        opacity: 0.65;
+                        opacity: 1;
                     }
-                }
-            }
 
-            p {
-                text-align: center;
-            }
-
-            a {
-                color: @red;
-                font-weight: bold;
-
-                &:hover {
-                    text-decoration: underline;
+                    img {
+                        width: 0.85em;
+                        height: 0.85em;
+                        vertical-align: -2px;
+                        margin-right: 0.45em;
+                    }
                 }
             }
         }

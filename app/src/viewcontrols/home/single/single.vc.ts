@@ -1,6 +1,7 @@
 import {register, storage} from 'platypus';
 import BaseViewControl from '../../base/base.vc';
 import PizzeriasRepository from '../../../repositories/pizzerias/pizzerias.repo';
+import ListViewControl from '../list/list.vc';
 declare let google: any;
 
 export default class SingleViewControl extends BaseViewControl {
@@ -85,6 +86,10 @@ export default class SingleViewControl extends BaseViewControl {
                 localStorage.setItem('favorites', JSON.stringify(this.favorites));
             }
         }
+    }
+
+    backHome() {
+        this.navigator.navigate(ListViewControl);
     }
 
     private _initMap(): void {

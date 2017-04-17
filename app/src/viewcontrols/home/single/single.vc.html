@@ -4,6 +4,5 @@
         {{pizzeria}} 
         <img plat-src="../images/star-{{@rootContext.favorite ? 'active' : 'inactive'}}.svg" alt="" class="favorite" plat-tap="toggleFavorite">
     </h1>
-    <p><a href="{{website}}" target="_blank">{{website}}</a></p>
-    <p plat-visible="{{err}}">{{error}}</p>
+    <p plat-visible="{{website}}">Find our more information on our <a href="{{website}}" target="_blank">website</a>!</p>
 </div>

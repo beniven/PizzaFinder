@@ -15,13 +15,16 @@
                 text-align: center;
                 margin: 0 0.5em 1em 0.5em;
                 padding: 4em 2em;
+                .transition-all();
 
                 &:hover {
                     cursor: pointer;
+                    color: @red;
                 }
 
                 span {
                     font-family: @font-header;
+                    font-size: 1.15em;
                 }
 
                 .favorite {
@@ -31,6 +34,8 @@
                     width: 1em;
                     height: 1em;
                     vertical-align: -2px;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
                 }
             }
         }

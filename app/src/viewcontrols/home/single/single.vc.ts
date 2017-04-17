@@ -8,9 +8,7 @@ export default class SingleViewControl extends BaseViewControl {
 
     context = {
         pizzeria: <Array<any>>null,
-        favorite: false,
-        err: false,
-        error: 'Oops! Looks like something went wrong.'
+        favorite: false
     };
 
     private map: any;
@@ -40,6 +38,7 @@ export default class SingleViewControl extends BaseViewControl {
         this.repo.read(id)
             .then((pizzeria) => {
                 context.pizzeria = pizzeria;
+                console.log(pizzeria);
             })
             .then(() => {
                 let coordinates = (<any>context.pizzeria).geometry.coordinates;

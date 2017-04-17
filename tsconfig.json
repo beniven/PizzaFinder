@@ -10,6 +10,7 @@
         "watch": false
     },
     "include": [
-        "app/**/*.ts"
+        "app/**/*.ts",
+        "server/**/*.ts"
     ]
 }

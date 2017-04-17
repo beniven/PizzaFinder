@@ -5,7 +5,8 @@
             {{pizzeria}} 
             <img plat-src="../images/star-{{@rootContext.favorite ? 'active' : 'inactive'}}.svg" alt="" class="favorite" plat-tap="toggleFavorite">
         </h1>
-        <p plat-visible="{{website}}">Find our more information on our <a href="{{website}}" target="_blank">website</a>!</p>
+        <p class="address">{{address}}</p>
+        <p class="info" plat-visible="{{website}}">Find our more information on our <a href="{{website}}" target="_blank">website</a>!</p>
         <p class="back" plat-tap="backHome"><img src="/images/left-arrow.svg" alt="">Back to List</p>
     </div>
 </div>

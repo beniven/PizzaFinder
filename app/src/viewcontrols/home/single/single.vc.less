@@ -4,6 +4,26 @@
     #platui > #variables;
 
     [plat-control="home-single-vc"] {
+        .pizzeria {
+            .map {
+                height: 40vh;
+                min-height: 15em;
+            }
 
+            .title {
+                color: @red;
+                text-align: center;
+
+                .favorite {
+                    width: 0.65em;
+                    height: 0.65em;
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.65;
+                    }
+                }
+            }
+        }
     }
 }

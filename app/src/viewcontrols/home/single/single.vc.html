@@ -1,3 +1,9 @@
 <div class="pizzeria" plat-context="pizzeria.properties">
-    {{pizzeria}}
+    <div class="map" id="pizzeria_map"></div>
+    <h1 class="title">
+        {{pizzeria}} 
+        <img plat-src="../images/star-{{@rootContext.favorite ? 'active' : 'inactive'}}.svg" alt="" class="favorite" plat-tap="toggleFavorite">
+    </h1>
+    <p><a href="{{website}}" target="_blank">{{website}}</a></p>
+    <p plat-visible="{{err}}">{{error}}</p>
 </div>

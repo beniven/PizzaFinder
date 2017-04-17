@@ -1,3 +1,5 @@
+import '../lib/scripts';
+
 import 'platypus';
 import 'platypusui';
 

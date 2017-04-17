@@ -35,3 +35,6 @@ cordova/plugins
 
 # Distribution files
 app/dist
+
+# Deploy directory
+deploy

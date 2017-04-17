@@ -13,6 +13,12 @@ The Pizza Finder was built with [PlatypusTS](https://github.com/Platypi/platypus
 - Pizzeria favorites will persist until removed by the user.
 - Once favorited, the pizzeria list will indicate those that have been favorited.
 
+## Trade-offs
+Given a longer time-frame, and possibly more data from the API, I would have implemented a more attractive and intuitive UI/UX. For instance, displaying an image for each pizzeria in the list view would give the user a better idea of what to expect from each pizzeria before clicking. 
+
+## My Work vs. The Framework
+Everything following the initial commit can be assumed to be written by me (unless otherwise noted in the comments).
+
 ### Links
 - [LinkedIn](https://www.linkedin.com/in/ben-niven-19407721)
 - [Bitbucket](https://bitbucket.org/benivster/)

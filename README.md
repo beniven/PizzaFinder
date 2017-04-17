@@ -27,7 +27,7 @@ Everything following the initial commit can be assumed to be written by me (unle
 
 ## Installation
 
-Use `npm i` to install the dependencies for this package.
+Use `npm i` to install the dependencies for this package and `npm run ts` for initial TypeScript compiling. 
 
 ## Typical Scenarios
 

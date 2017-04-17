@@ -27,6 +27,7 @@ node_modules
 *.js
 *.css
 *.map
+!app/lib/scripts.js
 
 # Non-essential cordova directories
 cordova/www
@@ -35,6 +36,5 @@ cordova/plugins
 
 # Distribution files
 app/dist
-
-# Deploy directory
-deploy
+/deploy
+/deploy.zip
